@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <div class="phone">
+      <div class="header">
+        <p class="time"></p>
+      </div>
+      <div class="screen" id="screen">
+        <div class="screen-page" id="lockPage">
+          <div class="time-div">
+            <h1 class="time"></h1>
+            <p class="date"></p>
+          </div>
+          <div class="btn">
+            <button id="Password-page">Go To Password Page</button><br />
+          </div>
+        </div>
+        <div class="screen-page none" id="passwordPage">
+          <p id="password"></p>
+          <div class="adder">
+            <div class="line">
+              <button class="passwordBtn" id="add1">1</button>
+              <button class="passwordBtn" id="add2">2</button>
+              <button class="passwordBtn" id="add3">3</button>
+            </div>
+            <div class="line">
+              <button class="passwordBtn" id="add4">4</button>
+              <button class="passwordBtn" id="add5">5</button>
+              <button class="passwordBtn" id="add6">6</button>
+            </div>
+            <div class="line">
+              <button class="passwordBtn" id="add7">7</button>
+              <button class="passwordBtn" id="add8">8</button>
+              <button class="passwordBtn" id="add9">9</button>
+            </div>
+            <div class="line">
+              <button class="passwordBtn" id="add0">0</button>
+            </div>
+          </div>
+          <div class="btn">
+            <button id="backspace"></button>
+            <button id="check">OK</button>
+          </div>
+        </div>
+        <div class="screen-page none" id="mainPage">
+          <div class="apps">
+            <div class="app app6" id="app6">
+              <img src="assets/app6.png" alt="App Logo" />
+              <p>Tasker</p>
+            </div>
+            <div class="app app7" id="app7">
+              <img src="assets/app7.png" alt="App Logo" />
+              <p>Game</p>
+            </div>
+            <div class="app app8" id="app8">
+              <img src="assets/app8.png" alt="App Logo" />
+              <p>Calendar</p>
+            </div>
+            <div class="app app9" id="app9">
+              <img src="assets/app9.png" alt="App Logo" />
+              <p>Calculator</p>
+            </div>
+          </div>
+          <div class="app1" id="app1">
+            <div class="google">
+              <i class="bx bxl-google"></i>
+            </div>
+            <div class="flex">
+              <i class="bx bxs-microphone"></i>
+              <i class="bx bxs-camera"></i>
+            </div>
+          </div>
+          <div class="apps">
+            <div class="app app2" id="app2">
+              <img src="assets/app1.png" alt="App Logo" />
+              <p>Info</p>
+            </div>
+            <div class="app app4" id="app4">
+              <img src="assets/app3.png" alt="App Logo" />
+              <p>Music Player</p>
+            </div>
+          </div>
+        </div>
+        <div class="app_section1 none hidden app-page" id="app1Page">
+          <div class="search">
+            <i id="searchIcon" class="bx bx-search-alt-2"></i>
+            <input type="text" placeholder="Search ..." id="searchInp" />
+          </div>
+          <hr />
+          <p id="toggle-p" class="none">
+            Nothing found for your search query
+          </p>
+        </div>
+        <div class="app_section2 screen-page none hidden app-page" id="app2Page">
+          <h1>
+            About
+            <button class="chervon">
+              <i id="chervon1" class="bx bx-chevron-down"></i><i id="chervon4" style="display: none"
+                class="bx bx-chevron-up"></i>
+            </button>
+          </h1>
+          <p class="hidden" id="text1">
+            This is a phone simulator that runs in every device possible. In
+            it you can have fun with apps like Instagram, YouTube and Music.
+          </p>
+          <hr />
+          <h1>
+            How To Use
+            <button class="chervon">
+              <i id="chervon2" class="bx bx-chevron-down"></i><i id="chervon5" style="display: none"
+                class="bx bx-chevron-up"></i>
+            </button>
+          </h1>
+          <p class="hidden" id="text2">
+            Click 'go to password page' to go to password page there enter
+            1234 and click 'ok' then you can access apps with double clicks.
+            All logins are 'userrr' and all passwords are '12345678'.
+          </p>
+          <hr />
+          <h1>
+            Apps are not working at all
+            <button class="chervon">
+              <i id="chervon3" class="bx bx-chevron-down"></i><i id="chervon6" style="display: none"
+                class="bx bx-chevron-up"></i>
+            </button>
+          </h1>
+          <p class="hidden" id="text3">
+            As it is just the starting all apps work a little bit, there are
+            limits to the usage, but it is still joyful.
+          </p>
+        </div>
+        <div class="app_section4 screen-page none hidden app-page" id="app4Page">
+          <h1>Music Player</h1>
+          <div class="flex2" id="swiper">
+            <div class="music-div">
+              <img src="assets/music1.png" alt="">
+              <p>Zn Fodástica 2</p>
+              <audio controls loop>
+                <source src="/audio/music1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="music-div">
+              <img src="assets/music2.png" alt="">
+              <p>Rihanha - Diamonds</p>
+              <audio controls loop>
+                <source src="/audio/music2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+          <div class="flex2 absolute">
+            <div class="circle previous" id="previous"><i class='bx bx-chevron-left'></i></div>
+            <div class="circle next" id="next"><i class='bx bx-chevron-right'></i></div>
+          </div>
+        </div>
+        <div class="container screen-page none hidden app-page" id="app6Page">
+          <h1 class="h1">Task List</h1>
+          <input type="text" id="taskInput" placeholder="Enter a task..." />
+          <button onclick="myFunction()" class="button">Add Task</button>
+          <ul id="tasklist"></ul>
+          <button id="clearAll" onclick="clearAllTasks()">Clear All</button>
+        </div>
+        <div class="ctn screen-page none hidden app-page" id="app7Page">
+          <h1 class="message" id="result"></h1>
+
+          <div class="goal">
+            <div class="goalkeeper">
+              <img src="assets/gk.png" alt="gk">
+            </div>
+            <div class="ball">
+              <img src="assets/ball.png" alt="ball">
+            </div>
+          </div>
+          <button class="button" onclick="shoot()">Shoot</button>
+          <p class="restart"><button onclick="restart()" class="restart2">RESTART</button></p>
+
+        </div>
+        <div class="calendar-container screen-page none hidden app-page" id="app8Page">
+          <!-- Date Input -->
+          <div class="date-input">
+            <label for="date-picker">Enter a Date:</label>
+            <input type="date" id="date-picker">
+            <button onclick="calculateDaysFromInput()">Calculate</button>
+          </div>
+
+          <!-- Days Info -->
+          <div class="days-info">
+            <p>Focused Date: <span id="focused-date">None</span></p>
+            <p>Days Left: <span id="days-left">-</span></p>
+          </div>
+
+          <!-- Swiper Calendar -->
+          <div class="swiper calendar-swiper">
+            <div class="swiper-wrapper" id="calendar-wrapper">
+              <!-- Months will be generated dynamically -->
+            </div>
+
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-next calendar-next"></div>
+            <div class="swiper-button-prev calendar-prev"></div>
+          </div>
+        </div>
+        <div class="ctn2 screen-page none hidden app-page" id="app9Page">
+          <div class="wrapper">
+            <section class="screen2">0</section>
+
+            <section class="calc-buttons">
+              <div class="calc-button-row">
+                <button class="calc-button double">C</button>
+                <button class="calc-button">←</button>
+                <button class="calc-button">÷</button>
+              </div>
+
+              <div class="calc-button-row">
+                <button class="calc-button">7</button>
+                <button class="calc-button">8</button>
+                <button class="calc-button">9</button>
+                <button class="calc-button">×</button>
+              </div>
+
+              <div class="calc-button-row">
+                <button class="calc-button">4</button>
+                <button class="calc-button">5</button>
+                <button class="calc-button">6</button>
+                <button class="calc-button">−</button>
+              </div>
+
+              <div class="calc-button-row">
+                <button class="calc-button">1</button>
+                <button class="calc-button">2</button>
+                <button class="calc-button">3</button>
+                <button class="calc-button">+</button>
+              </div>
+
+              <div class="calc-button-row">
+                <button class="calc-button triple">0</button>
+                <button class="calc-button">=</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="quit">
+        <button id="quitBtn">◯</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="app1.js"></script>
+  <script src="app4.js"></script>
+  <script src="app6.js"></script>
+  <script src="app7.js"></script>
+  <script src="app8.js"></script>
+  <script src="app9.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

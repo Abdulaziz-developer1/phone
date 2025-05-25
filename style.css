@@ -1,0 +1,780 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s linear;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background: url("/assets/bg.png");
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  width: 400px;
+  height: 90vh;
+  background: url("/assets/phone-bg.png");
+  background-size: cover;
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  backdrop-filter: brightness(0.3);
+}
+
+.screen {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.screen-page {
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  font-size: 1.5em;
+  padding: 1% 1.5%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn button {
+  background: transparent;
+  border: none;
+}
+
+.quit {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: brightness(0.3);
+}
+
+.quit button {
+  background: transparent;
+  border: none;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+#app1Page {
+  display: none;
+}
+
+#passwordPage {
+  text-align: center;
+}
+
+.adder {
+  height: 20%;
+}
+
+.line {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.passwordBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  backdrop-filter: brightness(0.9);
+}
+
+#mainPage {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.space {
+  width: 100%;
+  height: 35%;
+}
+
+.app1 {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: #3f3f3f;
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+}
+
+.apps {
+  width: 70%;
+  height: 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;
+}
+
+.app {
+  transform: scale(0.55);
+  margin-top: -25px;
+}
+
+.app img {
+  width: 100%;
+  height: 80%;
+  border-radius: 25px;
+}
+
+#quitBtn {
+  border-radius: 30px;
+  padding: 20px 25px;
+}
+
+#quitBtn:active {
+  background-color: #373737;
+}
+
+.app_section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #373737;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  font-size: 25px;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+}
+
+.search input {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  border: none;
+  width: 80%;
+  overflow: visible;
+  height: 100%;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+hr {
+  width: 100%;
+}
+
+.app_section2 {
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.app_section2 h1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.app_section2 h1 button {
+  background: transparent;
+  border: none;
+  font-size: 40px;
+}
+
+.app_section2 p {
+  display: none;
+}
+
+#toggle-p {
+  display: none; /* Initially hidden */
+  flex-direction: column; /* In case you need it */
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+  height: auto !important;
+  padding: 20px;
+}
+
+.h1 {
+  margin-bottom: 10px;
+}
+
+#taskInput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  color: #000;
+  border-radius: 5px;
+}
+
+#taskInput::placeholder {
+  color: #000;
+}
+
+.button {
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+#clearAll {
+  margin-top: 10px;
+  background-color: #dc3545;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#clearAll:hover {
+  background-color: #c82333;
+}
+
+#tasklist {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#tasklist li {
+  background: #ddd;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#tasklist li:hover {
+  background: #bbb;
+}
+
+.ctn {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #fff;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.goal {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: transparent;
+  border: 5px solid black;
+  margin-bottom: 20px;
+  border-bottom: none;
+}
+
+.goalkeeper {
+  position: absolute;
+  bottom: 100px;
+  left: 35%;
+  width: 60px;
+  height: 80px;
+  background: url("https://i.imgur.com/7DDrksH.png") no-repeat center/cover; /* GK image */
+  transform: translateX(-50%);
+  transition: transform 0.5s ease-out;
+}
+
+.goalkeeper img {
+  width: 200px;
+}
+
+.ball {
+  position: absolute;
+  bottom: -20px;
+  left: 45%;
+  width: 30px;
+  height: 30px;
+  background: url("https://i.imgur.com/zWFUyLn.png") no-repeat center/cover; /* Ball image */
+  transform: translateX(-50%);
+  transition: transform 0.7s ease-out;
+}
+
+.ball img {
+  width: 75px;
+  height: 75px;
+}
+
+/* Diving Animations */
+.gk-left {
+  transform: translateX(-140px) translateY(10px) rotate(-30deg);
+}
+.gk-right {
+  transform: translateX(80px) translateY(-30px) rotate(30deg);
+}
+.gk-center {
+  transform: translateX(-50%) translateY(-30px);
+}
+
+/* Ball Movement */
+.ball-left {
+  transform: translateX(-100px) translateY(-180px);
+}
+.ball-right {
+  transform: translateX(80px) translateY(-180px);
+}
+.ball-center {
+  transform: translateX(-50%) translateY(-180px);
+}
+
+.message {
+  font-size: 200px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.restart {
+  width: 350px;
+  height: 110px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 100px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restart2 {
+  width: 80%;
+  height: 80%;
+  border: none;
+  background: #000;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.restart button {
+  width: 300px;
+  height: 50px;
+}
+
+.button {
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .message {
+    font-size: 170px;
+  }
+}
+
+@media (max-width: 600px) {
+  .message {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 500px) {
+  .message {
+    font-size: 120px;
+  }
+}
+
+.wrapper {
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  padding: 20px 35px;
+  width: 100%;
+  background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+}
+
+.screen2 {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #232323;
+  font-size: 35px;
+  padding: 20px;
+  text-align: right;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: auto;
+}
+
+.calc-buttons {
+  margin-top: 20px;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.calc-button {
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #232323;
+  font-size: 24px;
+  width: 23%;
+  height: 65px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.calc-button:last-child {
+  background: #d72880;
+  color: white;
+}
+
+.calc-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.calc-button:active {
+  background: #ffef78;
+}
+
+.double {
+  width: 48%;
+}
+
+.triple {
+  width: 73%;
+}
+
+/* Calendar Container */
+.calendar-container {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Date Input */
+.date-input {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.date-input label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.date-input input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.date-input button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #007bff;
+  cursor: pointer;
+}
+
+.date-input button:hover {
+  background: #0056b3;
+}
+
+/* Days Info */
+.days-info {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.calendar-day {
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar-date {
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  outline: none;
+  display: inline-block;
+  background: #000;
+}
+
+.calendar-date:hover {
+  background: #ffeb3b;
+}
+
+.calendar-date:focus {
+  background: #ffeb3b;
+  outline: 2px solid #000;
+}
+
+.calendar-today {
+  background: #ff5722;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next.calendar-next,
+.swiper-button-prev.calendar-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper-button-next.calendar-next {
+  right: 10px;
+}
+
+.swiper-button-prev.calendar-prev {
+  left: 10px;
+}
+
+
+.app_section4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.music-div{
+  width: 100%;
+}
+
+.music-div img{
+  width: 100%;
+}
+
+audio{
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 65px;
+}
+
+.circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  backdrop-filter: brightness(.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.absolute{
+  position: absolute;
+  justify-content: space-between;
+}
+
+.app_section3 {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  padding: 10%;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.login img{
+  width: 50%;
+}
+
+.range{
+  height: 60%;
+}
+
+.login input{
+  padding: 10px 20px;
+  width: 100%;
+  margin-top: 10px;
+  color: #000;
+}
+
+.login input::placeholder{
+  color: #000;
+  font-size: 19px;
+}
+
+.login button{
+  padding: 10px 20px;
+  width: 100%;
+  margin-top: 10px;
+  color: #000;
+}
+
+/* Replace existing .homePage and .profile styles with these */
+.app_section3 .homePage
+ {
+  display: none; /* Start hidden */
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.app_section3 .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+/* Make sure the input styling doesn't conflict */
+.app_section3 input {
+  color: #000 !important;
+}
+
+.app_section3 input::placeholder {
+  color: #000 !important;
+}
